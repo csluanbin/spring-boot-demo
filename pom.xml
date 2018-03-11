@@ -81,7 +81,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-
+        <!--spring额外配置-->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-tx</artifactId>
@@ -94,7 +94,14 @@
             <version>5.0.4.RELEASE</version>
         </dependency>
 
-	</dependencies>
+        <!--freemaker-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+
+
+    </dependencies>
 
 	<build>
 		<plugins>
@@ -137,7 +144,7 @@
                 <directory>src/main/resources/${conf-dir}</directory>
             </resource>
             <resource>
-                <directory>src/main/resources</directory>
+                <directory>src/main/resources/base</directory>
             </resource>
         </resources>
         <testResources>

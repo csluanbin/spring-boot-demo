@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: dev
+
+
+---
+spring:
+  profiles: dev
+
+server:
+  port: 8088
+
+user:
+  name123: "luanbin123"
+
+
+---
+spring:
+  profiles: test
+
+server:
+  port: 8081
+
+user:
+  name123: "tuzi"
